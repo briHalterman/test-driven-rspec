@@ -1,0 +1,317 @@
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-11 13:18:05.203367', '2025-05-11 13:18:05.203369') RETURNING "key" /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Migrating to CreatePosts (20250511131754)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250511131754') RETURNING "version" /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Migrating to CreateConsoles (20250511172255)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "consoles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "manufacturer" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250511172255') RETURNING "version" /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "consoles" /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "consoles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "manufacturer" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "posts" /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250511172255) /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250511131754); /*application='TestDrivenRspecApi'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-11 17:25:28.854444', '2025-05-11 17:25:28.854449') RETURNING "key" /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-11 17:25:28.856086' WHERE "ar_internal_metadata"."key" = 'environment' /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '1091f5d19fcfd9d6b6e2145bf5d285ef18b0fec1', '2025-05-11 17:25:28.857300', '2025-05-11 17:25:28.857301') RETURNING "key" /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Started GET "/home" for ::1 at 2025-05-11 15:01:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by HomeController#index as HTML
+Completed 204 No Content in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.1ms)
+
+
+Started GET "/home" for ::1 at 2025-05-11 15:01:36 -0400
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2025-05-11 15:03:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by HomeController#index as HTML
+Completed 204 No Content in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.1ms)
+
+
+Started GET "/home" for ::1 at 2025-05-11 15:08:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by HomeController#index as HTML
+Completed 204 No Content in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/home" for ::1 at 2025-05-11 15:13:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.8ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2025-05-11 15:13:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2025-05-11 15:14:00 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/RETINA/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/RETINA/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for ::1 at 2025-05-11 15:14:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/home" for ::1 at 2025-05-11 15:14:13 -0400
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Started GET "/home" for ::1 at 2025-05-11 16:39:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.7ms)
+
+
+Started GET "/about" for ::1 at 2025-05-11 16:39:49 -0400
+Processing by AboutController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.5ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Started GET "/api/status" for ::1 at 2025-05-11 17:06:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by Api::StatusController#index as */*
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/" for ::1 at 2025-05-11 17:14:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.8ms)
+
+
+Started GET "/about" for ::1 at 2025-05-11 17:14:28 -0400
+Processing by AboutController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.5ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/api/status" for ::1 at 2025-05-11 17:14:59 -0400
+Processing by Api::StatusController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/consoles" for ::1 at 2025-05-11 17:15:08 -0400
+Processing by Api::ConsolesController#index as HTML
+  [1m[36mConsole Load (0.9ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/api/consoles_controller.rb:9:in `map'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/api/consoles" for ::1 at 2025-05-11 17:16:51 -0400
+Processing by Api::ConsolesController#index as HTML
+  [1m[36mConsole Load (0.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/api/consoles_controller.rb:9:in `map'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/consoles" for ::1 at 2025-05-11 17:17:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by Api::ConsolesController#index as HTML
+  [1m[36mConsole Load (0.7ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/api/consoles_controller.rb:9:in `map'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 1.5ms)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mConsole Create (0.6ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES ('Switch', 'Nintendo', '2025-05-11 21:17:24.411515', '2025-05-11 21:17:24.411515') RETURNING "id" /*application='TestDrivenRspecApi'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='TestDrivenRspecApi'*/[0m
+Started GET "/api/consoles" for ::1 at 2025-05-11 17:17:28 -0400
+Processing by Api::ConsolesController#index as HTML
+  [1m[36mConsole Load (0.2ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/api/consoles_controller.rb:9:in `map'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 1.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Started GET "/api/consoles" for ::1 at 2025-05-11 18:20:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by Api::ConsolesController#index as HTML
+  [1m[36mConsole Load (1.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/api/consoles_controller.rb:9:in `map'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/" for ::1 at 2025-05-11 18:21:12 -0400
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/consoles" for ::1 at 2025-05-11 18:21:14 -0400
+Processing by ConsolesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consoles/index.html.erb within layouts/application
+  [1m[36mConsole Load (0.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/views/consoles/index.html.erb:4
+  Rendered consoles/index.html.erb within layouts/application (Duration: 2.0ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.5ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/consoles" for ::1 at 2025-05-11 18:57:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TestDrivenRspecApi'*/[0m
+Processing by ConsolesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consoles/index.html.erb within layouts/application
+  [1m[36mConsole Load (0.9ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/views/consoles/index.html.erb:6
+  Rendered consoles/index.html.erb within layouts/application (Duration: 9.2ms | GC: 0.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | GC: 1.1ms)
+Completed 200 OK in 34ms (Views: 17.0ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/consoles/new" for ::1 at 2025-05-11 18:57:23 -0400
+Processing by ConsolesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consoles/new.html.erb within layouts/application
+  Rendered consoles/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/consoles" for ::1 at 2025-05-11 18:57:33 -0400
+Processing by ConsolesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "console"=>{"name"=>"PS3", "manufacturer"=>"Sony"}, "commit"=>"Create"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/consoles_controller.rb:11:in `create'
+  [1m[36mConsole Create (1.4ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES ('PS3', 'Sony', '2025-05-11 22:57:33.336247', '2025-05-11 22:57:33.336247') RETURNING "id" /*action='create',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/consoles_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/consoles_controller.rb:11:in `create'
+Redirected to http://localhost:3000/consoles
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/consoles" for ::1 at 2025-05-11 18:57:33 -0400
+Processing by ConsolesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consoles/index.html.erb within layouts/application
+  [1m[36mConsole Load (0.2ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/views/consoles/index.html.erb:6
+  Rendered consoles/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.6ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/consoles/new" for ::1 at 2025-05-11 18:57:35 -0400
+Processing by ConsolesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consoles/new.html.erb within layouts/application
+  Rendered consoles/new.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/consoles" for ::1 at 2025-05-11 18:57:41 -0400
+Processing by ConsolesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "console"=>{"name"=>"Pico", "manufacturer"=>"Sega"}, "commit"=>"Create"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/consoles_controller.rb:11:in `create'
+  [1m[36mConsole Create (1.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES ('Pico', 'Sega', '2025-05-11 22:57:41.174233', '2025-05-11 22:57:41.174233') RETURNING "id" /*action='create',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/consoles_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/controllers/consoles_controller.rb:11:in `create'
+Redirected to http://localhost:3000/consoles
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/consoles" for ::1 at 2025-05-11 18:57:41 -0400
+Processing by ConsolesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consoles/index.html.erb within layouts/application
+  [1m[36mConsole Load (0.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/views/consoles/index.html.erb:6
+  Rendered consoles/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/consoles/new" for ::1 at 2025-05-11 18:57:44 -0400
+Processing by ConsolesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consoles/new.html.erb within layouts/application
+  Rendered consoles/new.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/consoles" for ::1 at 2025-05-11 18:57:54 -0400
+Processing by ConsolesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering consoles/index.html.erb within layouts/application
+  [1m[36mConsole Load (0.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" /*action='index',application='TestDrivenRspecApi',controller='consoles'*/[0m
+  ↳ app/views/consoles/index.html.erb:6
+  Rendered consoles/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
