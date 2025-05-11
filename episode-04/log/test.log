@@ -2192,3 +2192,141 @@ Processing by HomeController#index as HTML
   Rendered layout layouts/application.html.erb (Duration: 0.1ms | GC: 0.0ms)
 Completed 200 OK in 0ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.3ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "NES"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:24:42.705174"], ["updated_at", "2025-05-11 20:24:42.705174"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "SNES"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:24:42.706675"], ["updated_at", "2025-05-11 20:24:42.706675"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Wii"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:24:42.707380"], ["updated_at", "2025-05-11 20:24:42.707380"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.3ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Genesis"], ["manufacturer", "Sega"], ["created_at", "2025-05-11 20:24:42.708560"], ["updated_at", "2025-05-11 20:24:42.708560"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Xbox"], ["manufacturer", "Microsoft"], ["created_at", "2025-05-11 20:24:42.709755"], ["updated_at", "2025-05-11 20:24:42.709755"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Switch"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:24:42.710612"], ["updated_at", "2025-05-11 20:24:42.710612"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Pico"], ["manufacturer", "Sega"], ["created_at", "2025-05-11 20:24:42.711309"], ["updated_at", "2025-05-11 20:24:42.711309"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "PS1"], ["manufacturer", "Sony"], ["created_at", "2025-05-11 20:24:42.711953"], ["updated_at", "2025-05-11 20:24:42.711953"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "PS2"], ["manufacturer", "Sony"], ["created_at", "2025-05-11 20:24:42.712636"], ["updated_at", "2025-05-11 20:24:42.712636"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/consoles?manufacturer=Nintendo" for 127.0.0.1 at 2025-05-11 16:24:42 -0400
+Processing by ConsolesController#index as HTML
+  Parameters: {"manufacturer"=>"Nintendo"}
+  [1m[36mConsole Load (0.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" WHERE "consoles"."manufacturer" = ?[0m  [["manufacturer", "Nintendo"]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.3ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "NES"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:24:42.740708"], ["updated_at", "2025-05-11 20:24:42.740708"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "SNES"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:24:42.741795"], ["updated_at", "2025-05-11 20:24:42.741795"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Wii"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:24:42.742724"], ["updated_at", "2025-05-11 20:24:42.742724"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Genesis"], ["manufacturer", "Sega"], ["created_at", "2025-05-11 20:24:42.743402"], ["updated_at", "2025-05-11 20:24:42.743402"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Xbox"], ["manufacturer", "Microsoft"], ["created_at", "2025-05-11 20:24:42.744020"], ["updated_at", "2025-05-11 20:24:42.744020"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Switch"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:24:42.744719"], ["updated_at", "2025-05-11 20:24:42.744719"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Pico"], ["manufacturer", "Sega"], ["created_at", "2025-05-11 20:24:42.745395"], ["updated_at", "2025-05-11 20:24:42.745395"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.4ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "PS1"], ["manufacturer", "Sony"], ["created_at", "2025-05-11 20:24:42.746047"], ["updated_at", "2025-05-11 20:24:42.746047"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.3ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "PS2"], ["manufacturer", "Sony"], ["created_at", "2025-05-11 20:24:42.747417"], ["updated_at", "2025-05-11 20:24:42.747417"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/consoles" for 127.0.0.1 at 2025-05-11 16:24:42 -0400
+Processing by ConsolesController#index as HTML
+  [1m[36mConsole Load (0.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles"[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.4ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "NES"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:26:24.587921"], ["updated_at", "2025-05-11 20:26:24.587921"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "SNES"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:26:24.590104"], ["updated_at", "2025-05-11 20:26:24.590104"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Wii"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:26:24.590901"], ["updated_at", "2025-05-11 20:26:24.590901"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Genesis"], ["manufacturer", "Sega"], ["created_at", "2025-05-11 20:26:24.591590"], ["updated_at", "2025-05-11 20:26:24.591590"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Xbox"], ["manufacturer", "Microsoft"], ["created_at", "2025-05-11 20:26:24.592255"], ["updated_at", "2025-05-11 20:26:24.592255"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Switch"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:26:24.593343"], ["updated_at", "2025-05-11 20:26:24.593343"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Pico"], ["manufacturer", "Sega"], ["created_at", "2025-05-11 20:26:24.593999"], ["updated_at", "2025-05-11 20:26:24.593999"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "PS1"], ["manufacturer", "Sony"], ["created_at", "2025-05-11 20:26:24.594646"], ["updated_at", "2025-05-11 20:26:24.594646"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "PS2"], ["manufacturer", "Sony"], ["created_at", "2025-05-11 20:26:24.595291"], ["updated_at", "2025-05-11 20:26:24.595291"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/consoles?manufacturer=Nintendo" for 127.0.0.1 at 2025-05-11 16:26:24 -0400
+Processing by ConsolesController#index as HTML
+  Parameters: {"manufacturer"=>"Nintendo"}
+  [1m[36mConsole Load (0.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles" WHERE "consoles"."manufacturer" = ?[0m  [["manufacturer", "Nintendo"]]
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 3.6ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "NES"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:26:24.643976"], ["updated_at", "2025-05-11 20:26:24.643976"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (3.6ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "SNES"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:26:24.648900"], ["updated_at", "2025-05-11 20:26:24.648900"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Wii"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:26:24.653222"], ["updated_at", "2025-05-11 20:26:24.653222"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.4ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Genesis"], ["manufacturer", "Sega"], ["created_at", "2025-05-11 20:26:24.663441"], ["updated_at", "2025-05-11 20:26:24.663441"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Xbox"], ["manufacturer", "Microsoft"], ["created_at", "2025-05-11 20:26:24.671040"], ["updated_at", "2025-05-11 20:26:24.671040"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Switch"], ["manufacturer", "Nintendo"], ["created_at", "2025-05-11 20:26:24.672027"], ["updated_at", "2025-05-11 20:26:24.672027"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Pico"], ["manufacturer", "Sega"], ["created_at", "2025-05-11 20:26:24.674320"], ["updated_at", "2025-05-11 20:26:24.674320"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "PS1"], ["manufacturer", "Sony"], ["created_at", "2025-05-11 20:26:24.674977"], ["updated_at", "2025-05-11 20:26:24.674977"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mConsole Create (0.2ms)[0m  [1m[32mINSERT INTO "consoles" ("name", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "PS2"], ["manufacturer", "Sony"], ["created_at", "2025-05-11 20:26:24.675596"], ["updated_at", "2025-05-11 20:26:24.675596"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/consoles" for 127.0.0.1 at 2025-05-11 16:26:24 -0400
+Processing by ConsolesController#index as HTML
+  [1m[36mConsole Load (0.1ms)[0m  [1m[34mSELECT "consoles".* FROM "consoles"[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
